@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* ---- App + Navbar theme tokens ---- */
+:root {
+  /* page colors */
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* navbar surfaces */
+  --nav-bg: rgba(255, 255, 255, 0.70);     /* navbar background (light)  */
+  --pill-bg: rgba(255, 255, 255, 0.70);    /* links pill background      */
+  --pill-border: rgba(15, 23, 42, 0.12);   /* border in light            */
+  --nav-text: #0f172a;                     /* slate-900-ish              */
+}
+
+html.dark {
+  /* page colors */
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  /* navbar surfaces */
+  --nav-bg: rgba(17, 17, 19, 0.80);        /* navbar background (dark)   */
+  --pill-bg: rgba(38, 38, 40, 0.70);       /* links pill background      */
+  --pill-border: rgba(255, 255, 255, 0.20);/* border in dark             */
+  --nav-text: #e5e7eb;                     /* slate-100-ish              */
+}
+
+/* Hide the decorative light gradient in dark mode */
+.light-gradient { display: block; }
+html.dark .light-gradient { display: none; }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}

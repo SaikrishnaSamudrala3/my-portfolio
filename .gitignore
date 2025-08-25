@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+
+# next / build
+.next/
+out/
+dist/
+build/
+.turbo/
+.vercel/
+
+# env & logs
+.env*
+*.log
+
+# misc
+.DS_Store
+coverage/
